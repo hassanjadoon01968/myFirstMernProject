@@ -176,3 +176,23 @@ body {
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+/* public/css/styles.css */
+
+.flash-message {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+  }
+  
+  .success {
+	background-color: #4CAF50;
+	color: white;
+  }
+
+  .error {
+	background-color: #ff0000;
+	color: white;
+  }
+  
+  /* Add more styles for other message types (e.g., error, info) as needed */

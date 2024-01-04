@@ -24,10 +24,7 @@ const registration = new mongoose.Schema({
         type:String,
         required:true
     },
-    confirmPassword: {
-        type:String,
-        required:true
-    },   tokens: [{
+    tokens: [{
         token: {
             type: String,
             required: true
@@ -45,7 +42,7 @@ registration.pre("save" , async function(next){
         //undefined confirm password (means resist confirm password from saving into db)
         this.confirmPassword = undefined;
     }
-    next()
+    next();
 })
 
 //make collection in db
